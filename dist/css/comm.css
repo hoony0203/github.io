@@ -1518,10 +1518,10 @@ legend {
     padding: 0 5%;
   }
   .portfolio_wrap .port-img .imges-wrap .video-status {
-    left: 36vw;
+    left: 22vw;
   }
   .portfolio_wrap .port-img .imges-wrap video {
-    width: 600px;
+    width: 480px;
   }
   .port-texts {
     position: relative;
@@ -1618,6 +1618,12 @@ legend {
     width: 100%;
     height: 60%;
     justify-content: center;
+  }
+  .portfolio_wrap .port-img .imges-wrap .video-status {
+    left: 36vw;
+  }
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 600px;
   }
   .port-texts {
     width: 100%;

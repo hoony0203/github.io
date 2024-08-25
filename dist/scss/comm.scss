@@ -1344,10 +1344,10 @@
     .port-img {
       .imges-wrap {
         .video-status {
-          left: 36vw;
+          left: 22vw;
         }
         video {
-          width: 600px;
+          width: 480px;
         }
       }
     }
@@ -1456,6 +1456,15 @@
     width: 100%;
     height: 60%;
     justify-content: center;
+
+    .imges-wrap {
+      .video-status {
+        left: 36vw;
+      }
+      video {
+        width: 600px;
+      }
+    }
   }
   .port-texts {
     width: 100%;
@@ -1596,9 +1605,6 @@
     justify-content: center;
 
     .imges-wrap {
-      // .video-status {
-      //   left: 36vw;
-      // }
       video {
         width: 480px;
       }
@@ -1658,9 +1664,6 @@
 @media screen and (max-width: 620px) {
   .portfolio_wrap .port-img {
     .imges-wrap {
-      // .video-status {
-      //   left: 36vw;
-      // }
       video {
         width: 360px;
       }
