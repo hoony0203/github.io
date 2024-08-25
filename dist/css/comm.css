@@ -1442,6 +1442,12 @@ legend {
     width: 100%;
     padding: 0 5%;
   }
+  .portfolio_wrap .port-img .imges-wrap .video-status {
+    left: 22vw;
+  }
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 600px;
+  }
   .port-images .macbook {
     transform: scale(0.75);
   }
@@ -1510,6 +1516,12 @@ legend {
     width: auto;
     height: calc(100% - 85px);
     padding: 0 5%;
+  }
+  .portfolio_wrap .port-img .imges-wrap .video-status {
+    left: 36vw;
+  }
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 600px;
   }
   .port-texts {
     position: relative;
@@ -1731,6 +1743,9 @@ legend {
     height: 60%;
     justify-content: center;
   }
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 480px;
+  }
   .port-texts {
     width: 100%;
     height: 35%;
@@ -1781,6 +1796,11 @@ legend {
     width: 100px;
   }
 }
+@media screen and (max-width: 620px) {
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 360px;
+  }
+}
 @media screen and (max-width: 425px) {
   .depth1,
   .depth2,
@@ -1807,6 +1827,9 @@ legend {
   }
   .sec2 .about-txt-wrap .abtxt .about-intro {
     font-size: 14px;
+  }
+  .portfolio_wrap .port-img .imges-wrap video {
+    width: 240px;
   }
   .portfolio_wrap .port-img .imges-wrap .kt4 {
     background: url(../../images/main/KT4-m.jpg) no-repeat 0 0;

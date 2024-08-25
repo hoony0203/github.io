@@ -1249,6 +1249,19 @@
     width: 100%;
     padding: 0 5%;
   }
+  .portfolio_wrap {
+    .port-img {
+      .imges-wrap {
+        .video-status {
+          left: 22vw;
+        }
+        video {
+          width: 600px;
+        }
+      }
+    }
+  }
+
   .port-images .macbook {
     transform: scale(0.75);
   }
@@ -1327,6 +1340,17 @@
     width: auto;
     height: calc(100% - 85px);
     padding: 0 5%;
+
+    .port-img {
+      .imges-wrap {
+        .video-status {
+          left: 36vw;
+        }
+        video {
+          width: 600px;
+        }
+      }
+    }
   }
   .port-texts {
     position: relative;
@@ -1570,6 +1594,15 @@
     width: 100%;
     height: 60%;
     justify-content: center;
+
+    .imges-wrap {
+      // .video-status {
+      //   left: 36vw;
+      // }
+      video {
+        width: 480px;
+      }
+    }
   }
   .port-texts {
     width: 100%;
@@ -1622,15 +1655,18 @@
   }
 }
 
-// @media screen and (min-height: 1024px) {
-//   .waves-wrap {
-//     top: 12rem;
-//   }
-
-//   .waves {
-//     top: 1rem;
-//   }
-// }
+@media screen and (max-width: 620px) {
+  .portfolio_wrap .port-img {
+    .imges-wrap {
+      // .video-status {
+      //   left: 36vw;
+      // }
+      video {
+        width: 360px;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 425px) {
   .depth1,
@@ -1661,6 +1697,18 @@
   .sec2 .about-txt-wrap .abtxt .about-intro {
     font-size: 14px;
   }
+
+  .portfolio_wrap .port-img {
+    .imges-wrap {
+      // .video-status {
+      //   left: 36vw;
+      // }
+      video {
+        width: 240px;
+      }
+    }
+  }
+
   .portfolio_wrap .port-img .imges-wrap .kt4 {
     background: url(../../images/main/KT4-m.jpg) no-repeat 0 0;
     background-size: cover;
