@@ -618,6 +618,9 @@ legend {
   height: 100vh;
   z-index: 100;
 }
+.sec2 #skills > div {
+  flex-grow: 1;
+}
 .sec2 #skills .skills-wrap {
   display: flex;
   max-width: 1440px;
@@ -631,17 +634,17 @@ legend {
   width: 40%;
   height: 100%;
 }
-.sec2 #skills .skills-wrap .skills-icon-wrap .skill-icon {
-  border: 5px solid purple;
+.sec2 #skills .skills-wrap .skills-icon-wrap .skills-icon {
+  border: 5px solid red;
   position: absolute;
-  transform: translate(10%, 50%);
+  transform: translate(10%, 10%);
   width: 600px;
 }
 .sec2 #skills .skills-wrap .skills-list-wrap {
   width: 45%;
 }
 .sec2 #skills .skills-wrap .skills-list-wrap .skill {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .sec2 #skills .skills-wrap .skills-list-wrap .skill .skill-label {
   font-weight: 700;
@@ -651,25 +654,18 @@ legend {
 }
 .sec2 #skills .skills-wrap .skills-list-wrap .skill .skill-script {
   display: flex;
-  line-height: 35px;
+  line-height: 25px;
   color: #151515;
+  position: relative;
+  bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  max-width: 40rem;
 }
 .sec2 .skill .skill-label {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
-}
-.sec2 .skills {
-  padding: 2rem;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-.sec2 .skills > div {
-  flex-grow: 1;
-}
-.sec2 .skill {
-  padding: 0.2rem 1rem;
 }
 .sec2 .skill .skill-label h2 {
   font-weight: 700;
@@ -701,13 +697,6 @@ legend {
   overflow: hidden;
   background-color: var(--cl-point-orange);
   opacity: 0.5;
-}
-.sec2 .skill .skill-script {
-  position: relative;
-  bottom: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  max-width: 40rem;
 }
 .sec2 .flex {
   display: flex;
