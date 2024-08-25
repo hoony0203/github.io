@@ -253,7 +253,7 @@
             <div class="text-info ti2">
               <div class="text-head">
                 <div class="pf-text pft1">
-                  <span>STANDARD WEBSITE [INDEX]</span>
+                  <span>Slice-Record</span>
                 </div>
                 <div class="pf-logo pfl1">
                   <img
@@ -415,15 +415,14 @@
         navigation: true,
         scrollingSpeed: 700,
         controlArrows: false,
-        anchors: ["firstPage", "secondPage", "3rdPage", "4thPage", "lastPage"],
+        anchors: ["intro", "aboutme", "sliceRecord", "moreinfo"],
         keyboardScrolling: true,
-        freemode: true,
         // navigationPosition: "left",
         showActiveTooltip: false,
         slidesNavigation: true,
         dropEffect: true,
         responsiveWidth: 1025,
-        onLeave: function (origin, destination, direction) {
+        onLeave: function () {
           jQuery(".section [data-aos]").removeClass("aos-animate");
         },
         onSlideLeave: function () {
