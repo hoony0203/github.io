@@ -547,6 +547,14 @@ legend {
 .sec2 {
   background: #f4f4f4;
 }
+.sec2 .swiper-button-prev {
+  left: 6vh;
+  cursor: pointer;
+}
+.sec2 .swiper-button-next {
+  right: 6vh;
+  cursor: pointer;
+}
 .sec2 .blob-picture {
   position: absolute;
   top: 50%;
@@ -600,6 +608,48 @@ legend {
   margin-bottom: 10px;
 }
 .sec2 .about-txt-wrap .abtxt .about-intro {
+  display: flex;
+  line-height: 35px;
+  color: #151515;
+}
+.sec2 #skills {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+.sec2 #skills .skills-wrap {
+  display: flex;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sec2 #skills .skills-wrap .skills-icon-wrap {
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+.sec2 #skills .skills-wrap .skills-icon-wrap .skill-icon {
+  border: 5px solid purple;
+  position: absolute;
+  transform: translate(10%, 50%);
+  width: 600px;
+}
+.sec2 #skills .skills-wrap .skills-list-wrap {
+  width: 45%;
+}
+.sec2 #skills .skills-wrap .skills-list-wrap .skill {
+  margin-bottom: 25px;
+}
+.sec2 #skills .skills-wrap .skills-list-wrap .skill .skill-label {
+  font-weight: 700;
+  font-size: 30px;
+  color: #25216d;
+  margin-bottom: 10px;
+}
+.sec2 #skills .skills-wrap .skills-list-wrap .skill .skill-script {
   display: flex;
   line-height: 35px;
   color: #151515;
