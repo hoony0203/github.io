@@ -136,7 +136,8 @@
   /* Animation */
 
   .parallax > use {
-    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5)
+      infinite;
   }
   .parallax > use:nth-child(1) {
     animation-delay: -2s;
@@ -396,9 +397,17 @@
       align-items: center;
       justify-content: space-evenly;
       .skills-icon-wrap {
-        position: relative;
+        display: flex;
         width: 40%;
         height: 100%;
+        .skills-icon-img {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          img {
+            width: 30vw;
+          }
+        }
         .skills-icon {
           border: 5px solid red;
           position: absolute;
@@ -408,6 +417,7 @@
       }
       .skills-list-wrap {
         width: 45%;
+
         .skill {
           margin-bottom: 10px;
           .skill-label {
@@ -418,6 +428,7 @@
           }
           .skill-script {
             display: flex;
+            flex-direction: column;
             line-height: 25px;
             color: #151515;
             position: relative;
@@ -727,7 +738,8 @@
         transition: all 3s;
       }
       .monami {
-        background: url("../../images/portfolio/portfolio1.jpg") no-repeat 0 0;
+        background: url("../../images/portfolio/portfolio1.jpg")
+          no-repeat 0 0;
         background-size: cover;
       }
     }
@@ -735,8 +747,8 @@
 }
 
 .sec5 {
-  background: #f4f4f4 url(../../images/portfolio/portfolio2.jpg) no-repeat 50%
-    50% / contain;
+  background: #f4f4f4 url(../../images/portfolio/portfolio2.jpg)
+    no-repeat 50% 50% / contain;
 }
 
 .port-texts {
@@ -819,7 +831,8 @@
 
     &:hover {
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.2);
     }
 
     &::after {
@@ -846,7 +859,8 @@
       outline: 1px solid;
       outline-color: rgba(255, 255, 255, 0.6);
       outline-offset: 10px;
-      transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8),
+      transition: 0.5s outline-offset
+          cubic-bezier(0.2, 0.8, 0.25, 0.8),
         0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8),
         0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
     }
@@ -869,7 +883,8 @@
 
     &:hover {
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.2);
     }
 
     &::after {
@@ -896,7 +911,8 @@
       outline: 1px solid;
       outline-color: rgba(255, 255, 255, 0.6);
       outline-offset: 10px;
-      transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8),
+      transition: 0.5s outline-offset
+          cubic-bezier(0.2, 0.8, 0.25, 0.8),
         0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8),
         0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
     }
@@ -925,13 +941,18 @@
 .fp-slidesNav ul li:hover a.active span {
   width: 12px;
   height: 12px;
-  background-image: linear-gradient(to right, #feea71 0%, #fdcb6e 100%);
+  background-image: linear-gradient(
+    to right,
+    #feea71 0%,
+    #fdcb6e 100%
+  );
   background-size: 1600% 1600%;
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 50;
   transition: 0.15s linear;
-  animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
+  animation: blobRadius 5s ease infinite,
+    blobBackground 15s ease infinite;
 }
 
 @keyframes blobRadius {

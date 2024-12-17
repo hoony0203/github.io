@@ -630,9 +630,17 @@ legend {
   justify-content: space-evenly;
 }
 .sec2 #skills .skills-wrap .skills-icon-wrap {
-  position: relative;
+  display: flex;
   width: 40%;
   height: 100%;
+}
+.sec2 #skills .skills-wrap .skills-icon-wrap .skills-icon-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec2 #skills .skills-wrap .skills-icon-wrap .skills-icon-img img {
+  width: 30vw;
 }
 .sec2 #skills .skills-wrap .skills-icon-wrap .skills-icon {
   border: 5px solid red;
@@ -654,6 +662,7 @@ legend {
 }
 .sec2 #skills .skills-wrap .skills-list-wrap .skill .skill-script {
   display: flex;
+  flex-direction: column;
   line-height: 25px;
   color: #151515;
   position: relative;
